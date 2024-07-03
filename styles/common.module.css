@@ -1,0 +1,13 @@
+
+.withpageappear {
+  animation: pageappear 200ms ease-out forwards;
+}
+
+@keyframes pageappear {
+  from {
+    filter: opacity(0) grayscale(1);
+  }
+  to {
+    filter: opacity(1) grayscale(0);
+  }
+}
