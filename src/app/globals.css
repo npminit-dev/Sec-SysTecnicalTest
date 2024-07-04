@@ -12,25 +12,6 @@
   box-sizing: border-box;
 }
 
-#test1 {
-  color: var(--primary-color)
-}
-#test2 {
-  color: var(--secondary-color)
-}
-#test3 {
-  color: var(--background-color)
-}
-#test4 {
-  color: var(--accent-color-green)
-}
-#test5 {
-  color: var(--accent-color-orange)
-}
-#test6 {
-  color: var(--text-color)
-}
-
 body {
   background-color: var(--background-color-light);
 }

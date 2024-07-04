@@ -1,0 +1,176 @@
+/* -- MAIN -- */
+#aboutme_mainbox {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (width < 768px) {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+
+
+/* ABOUTME TEXT */
+
+#aboutme_textbox {
+  height: 500px;
+  max-width: 500px;
+  padding: 10px 20px;
+
+  @media screen and (width < 768px) {
+    max-width: unset;
+    width: 100%;
+    height: fit-content;
+  }
+}
+
+#aboutme_textbox > p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color-light);
+
+  @media screen and (width < 768px) {
+    font-size: 15px;
+  }
+}
+
+/* -- PHOTO -- */
+
+#photo_box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  width: 500px;
+  cursor: pointer;
+  transition-duration: 200ms;
+
+  @media screen and (width < 768px) {
+    width: 100%;
+  }
+}
+
+#photo_box:hover {
+  transform: scale(1.05)
+}
+
+#photo {
+  position: relative;
+  border-radius: 100%;
+  border-color: var(--primary-color);
+  border-style: solid;
+  border-width: 0 0 6px 0;
+  background-repeat: no-repeat;
+  background-position: 50% 67%;
+  background-image: url('/city.png');
+
+  @media screen and (width < 768px) {
+    transform: scale(.9);
+    height: min-content;
+  }
+}
+
+#iconbox {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+
+  @media screen and (width < 768px) {
+    display: none;
+  }
+}
+
+.photo_icon {
+  position: absolute;
+  min-height: 50px;
+  min-width: 50px;
+  z-index: -10;
+}
+
+#react {
+  color: #1399c4;
+  animation: react_anim 5s cubic-bezier(0,1.13,0,1) 500ms forwards, rotate 10s linear infinite;
+  animation-composition: add;
+  height: 50px;
+  width: 50px;
+}
+
+#vscode {
+  color: #0076b8;
+  animation: vscode_anim 5s cubic-bezier(0,1.13,0,1) 650ms forwards;
+}
+
+#node {
+  color: #84bf08;
+  animation: node_anim 5s cubic-bezier(0,1.13,0,1) 800ms forwards;
+}
+
+#css {
+  color: #2d53e5;
+  animation: css_anim 5s cubic-bezier(0,1.13,0,1) 950ms forwards;
+}
+
+#github {
+  color: #161414;
+  animation: github_anim 5s cubic-bezier(0,1.13,0,1) 1100ms forwards;
+}
+
+/* -- ANIMATIONS -- */
+
+@keyframes react_anim {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(120px, 120px);
+  }
+}
+
+@keyframes vscode_anim {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-70px, -140px);
+  }
+}
+
+@keyframes node_anim {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(90px, -130px);
+  }
+}
+
+@keyframes css_anim {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-95px, 135px);
+  }
+}
+
+@keyframes github_anim {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-170px, 0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

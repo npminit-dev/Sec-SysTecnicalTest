@@ -1,0 +1,128 @@
+/* -- MAIN CONTAINER -- */
+
+#homebox {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 60% 40%;
+  width: 100%;
+  height: calc(100vh - 50px);
+  padding: 50px 5px;
+
+  @media screen and (width < 768px) {
+    padding: 15px 5px;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+  }
+} 
+
+/* -- CODING ANIMATION -- */
+
+#coding_box {
+  height: 350px;
+  width: 350px;
+  align-self: center;
+  justify-self: left;
+
+  @media screen and (width < 768px) {
+    justify-self: center;
+    height: 275px;
+    width: 275px;
+  }
+}
+
+/* -- TITLE -- */
+
+#title_box {
+  text-align: right;
+  align-self: center;
+  justify-self: center;
+  width: 80%;
+
+  @media screen and (width < 768px) {
+    text-align: center;
+
+  }
+}
+
+#title_box > h1 {
+  font-size: 40px;
+  margin-bottom: 5px;
+
+  @media screen and (width < 768px) {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+}
+
+#title_box > h2 {
+  font-size: 28px;
+  margin-top: 5px;
+
+  @media screen and (width < 768px) {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+}
+
+#title_box > h1, #title_box > h2 {
+  background: #6A0DAD;
+  background: radial-gradient(circle farthest-side at left center, #6A0DAD 0%, #007BFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* -- INTRODUCTION -- */
+
+#introduction_box {
+  width: 80%;
+  max-width: 550px;
+  margin: 40px 0;
+  grid-column: span 2;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  line-height: 25px;
+  font-size: 18px;
+  color: var(--text-color-light);
+
+  @media screen and (width < 768px) {
+    grid-column: unset;
+    line-height: 20px;
+    font-size: 15px;
+  }
+}
+
+#introduction_box span {
+  filter: opacity(0);
+}
+
+#react {
+  color: #50bbd7;
+  font-weight: 700;
+}
+
+#next {
+  color: #000000;
+  font-weight: 700;
+}
+
+#angular {
+  color: #c8002c;
+  font-weight: 700;
+}
+
+/* -- ANIMATIONS -- */
+
+.withletterappear {
+  animation: letterappear 500ms ease-out forwards;
+}
+
+@keyframes letterappear {
+  from {
+    filter: opacity(0)
+  }
+  to {
+    filter: opacity(1);
+  }
+}

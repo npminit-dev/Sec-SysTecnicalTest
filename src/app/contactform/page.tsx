@@ -1,8 +1,8 @@
 const ContactForm = () => {
   return ( 
-    <div>
+    <section>
       CONTACT FORM
-    </div>
+    </section>
   );
 }
  

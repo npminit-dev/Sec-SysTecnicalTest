@@ -12,7 +12,7 @@
   top: 0;
   text-wrap: nowrap;
   background: var(--primary-color);
-  background: linear-gradient(153deg, rgba(0,123,255,1) 50%, rgba(248,249,250,1) 100%);
+  background: linear-gradient(160deg, rgba(0,123,255,1) 30%, rgba(0, 0, 0, 0.904) 90%);
   z-index: 10;
   
   @media screen and (width < 768px) {
@@ -43,11 +43,12 @@
   text-decoration: none;
   color: var(--text-color-dark);
   font-size: 14px;
+  font-weight: 500;
   user-select: none;
 }
 
 .link:hover {
-  text-shadow: 1px 1px 10px rgba(103, 0, 151, 0.7), -1px 1px 10px rgba(103, 0, 151, 0.7), 1px -1px 10px rgba(103, 0, 151, 0.7), -1px -1px 10px rgba(103, 0, 151, 0.7);
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7), -1px 1px 10px rgba(0, 0, 0, 0.7), 1px -1px 10px rgba(0, 0, 0, 0.7), -1px -1px 10px rgba(0, 0, 0, 0.7);
 }
 
 .point_divider {
@@ -115,7 +116,7 @@
   top: 0;
   left: 0;
   background: #00000025;
-  z-index: -10;
+  z-index: 5;
 
   @media screen and (width > 768px) {
     display: none;
@@ -161,7 +162,7 @@ a:has(#avatar_mainbox):hover {
   margin: 0 5px;
   font-size: 14px;
   color: var(--text-color-dark);
-  font-weight: 400;
+  font-weight: 500;
   user-select: none;
 }
 
