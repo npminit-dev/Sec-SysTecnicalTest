@@ -110,9 +110,9 @@
 }
 
 #burger_closeshadow {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   background: #00000025;

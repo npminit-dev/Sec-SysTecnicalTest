@@ -1,6 +1,5 @@
 import styles from '@styles/about.module.css'
 import Image from 'next/image';
-import { useRef } from 'react';
 import { FaCss3Alt, FaGithub, FaNodeJs, FaReact } from 'react-icons/fa';
 import { VscVscode } from 'react-icons/vsc';
 

@@ -25,7 +25,7 @@ const AboutMe = () => {
         I am eager to expand my skills in CI/CD, <strong>Docker</strong>, <strong>Kubernetes</strong>, and cloud services like <strong>AWS</strong> and <strong>Google Cloud</strong>.
       </p>
       <p>
-        And... that's all 😂, I hope we can work soon! 🚀
+        And... that&apos;s all 😂, I hope we can work soon! 🚀
       </p>
     </div>
   );

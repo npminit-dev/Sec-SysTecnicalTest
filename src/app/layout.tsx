@@ -5,7 +5,6 @@ import "./globals.css";
 import Header from "@/components/header/Header";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
-const nunito = Nunito({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Sec&Sys",
@@ -18,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html spellCheck='false' lang="en">
       <body className={montserrat.className}>
         <Header></Header>
         <main>

@@ -1,3 +1,5 @@
+"use client"
+
 import HistoryBuff from '@/components/interests/HistoryBuff';
 import MusicLover from '@/components/interests/MusicLover';
 import SportEnthusiast from '@/components/interests/SportEnthusiast';
